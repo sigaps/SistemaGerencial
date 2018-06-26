@@ -30,12 +30,14 @@
            
           
 
-            <li class="nav-item has-treeview menu-open">
+            <li class="nav-item has-treeview menu-close">
                 <a href="#" class="nav-link active">
                   <i class="fa fa-circle"></i>
-                  <p>Nivel Estrategico</p>
+                  <p>Nivel Estrategico
+                   <i class="right fa fa-angle-left"></i></p>
                 </a>
-            </li>
+                <ul class="nav nav-treeview">
+           
 
 
 
@@ -69,16 +71,20 @@
                   <i class="fa fa-file-text-o"></i>
                   <p>Utilidades por rubro</p>
                 </a>
+                </ul>
               </li>
+               
 
 
 
-             <li class="nav-item has-treeview menu-open">
+             <li class="nav-item has-treeview menu-close">
                 <a href="#" class="nav-link active">
                   <i class="fa fa-circle"></i>
-                  <p>Nivel tactico</p>
+                  <p>Nivel tactico
+                   <i class="right fa fa-angle-left"></i></p>
                 </a>
-            </li>
+                 <ul class="nav nav-treeview">
+           
 
                 <li class="nav-item">
                 <a href="#" class="nav-link">
@@ -117,28 +123,33 @@
                   <p>Censo</p>
                 </a>
               </li>
+              </ul>
             </li>   
        
             
 
-          <li class="nav-item has-treeview menu-open">
+          <li class="nav-item has-treeview menu-close">
              <a href="#" class="nav-link active">
               <i class="fa fa-circle"></i>
-              <p>Administrador</p>
+              <p>Administrador
+               <i class="right fa fa-angle-left"></i></p>
               </a>
-                  <a href="{{url('/admin/users/create')}}" class="nav-link">
+                <ul class="nav nav-treeview">
+                  <a href="{{url('/admin/users')}}" class="nav-link">
                    <i class="fa fa-address-book-o"></i>
                     <p>Gestionar usuario</p>
                   </a>
                
 
-                <li class="nav-item">
-                  <a href="{{url('/admin/users')}}" class="nav-link">
+
+                 <li class="nav-item">
+                  <a href="" class="nav-link">
                     <i class="fa fa-address-book-o"></i>
                     <p>Generar Backup</p>
                   </a>
                 </li>
              </ul>
+             </li>
  
     </nav>
     <!-- /.sidebar-menu -->

@@ -25,13 +25,14 @@
       <ul class="nav nav-pills nav-sidebar flex-column responsive" data-widget="treeview" role="menu" data-accordion="false">
         <!-- Add icons to the links using the .nav-icon class
              with font-awesome or any other icon font library -->
-            <li class="nav-item has-treeview menu-open">
-              <ul class="nav nav-treeview">
-
-             <a href="#" class="nav-link active">
-              <i class="fa fa-circle"></i>
-              <p>Usuario tactico</p>
+            <li class="nav-item has-treeview menu-close">
+                <a href="#" class="nav-link active">
+                  <i class="fa fa-circle"></i>
+                  <p>Nivel tactico
+                   <i class="right fa fa-angle-left"></i></p>
                 </a>
+                 <ul class="nav nav-treeview">
+           
 
                 <li class="nav-item">
                 <a href="#" class="nav-link">
@@ -39,65 +40,42 @@
                   <p>Desempeño de personal</p>
                 </a>
               </li>
-             </li>
+              </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="fa fa-file-text-o"></i>
                   <p>Permisos de una empresa</p>
                 </a>
               </li>
-
               <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="fa fa-file-text-o"></i>
                   <p>Lista de permisos</p>
                 </a>
               </li>
-
               <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="fa fa-file-text-o"></i>
                   <p>Permisos por etapas</p>
                 </a>
               </li>
-
               <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="fa fa-file-text-o"></i>
                   <p>Permisos proximos a vencer</p>
                 </a>
               </li>
-
               <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="fa fa-file-text-o"></i>
                   <p>Censo</p>
                 </a>
               </li>
+              </ul>
+            </li>   
 
-            </li>
-          </ul>
 
-
-            <li class="nav-item has-treeview menu-open">
-             <a href="#" class="nav-link active">
-              <i class="fa fa-circle"></i>
-              <p>Administrador</p>
-              </a>
-                  <a href="{{url('/admin/users/create')}}" class="nav-link">
-                   <i class="fa fa-address-book-o"></i>
-                    <p>Gestionar usuario</p>
-                  </a>
-               
-
-                <li class="nav-item">
-                  <a href="{{url('/admin/users')}}" class="nav-link">
-                    <i class="fa fa-address-book-o"></i>
-                    <p>Generar Backup</p>
-                  </a>
-                </li>
-            
- </li>
+        
       
     </nav>
     <!-- /.sidebar-menu -->

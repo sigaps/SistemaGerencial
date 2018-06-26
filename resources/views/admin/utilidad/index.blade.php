@@ -24,16 +24,8 @@
           <div class="container col-lg-4 col-md-8 col-sm-8 col-xs-12 " style="text-align: center" >
 
                        <br>
-                      <label>Rubro:</label>
+                      <label>Utilidades por rubro</label>
 
-                      <div class="form-group">
-                        <select name="rubro" id="rubro" class="form-control" data-live-search="true" required>
-                            <option value="">Seleccionar rubro...</option>  
-                          @foreach ($rubro as $rub)
-                            <option value="{{$rub->id}}"> {{$rub->type}}</option>
-                          @endforeach        
-                        </select> 
-                      </div>
              
                     <br>
                     <label>Desde:</label>

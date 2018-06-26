@@ -22,12 +22,12 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
-    public function gerente()
+    public function estrategico()
     {
         return $this->type;
     }
 
-    public function coordinador()
+    public function tactico()
     {
         return $this->type;
     }

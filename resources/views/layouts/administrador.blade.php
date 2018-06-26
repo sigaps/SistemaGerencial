@@ -25,28 +25,29 @@
       <ul class="nav nav-pills nav-sidebar flex-column responsive" data-widget="treeview" role="menu" data-accordion="false">
         <!-- Add icons to the links using the .nav-icon class
              with font-awesome or any other icon font library -->
-            <li class="nav-item has-treeview menu-open">
+         
+          <li class="nav-item has-treeview menu-close">
              <a href="#" class="nav-link active">
               <i class="fa fa-circle"></i>
-              <p>Administrador</p>
-                  <a href="{{url('/admin/users/create')}}" class="nav-link">
+              <p>Administrador
+               <i class="right fa fa-angle-left"></i></p>
+              </a>
+                <ul class="nav nav-treeview">
+                  <a href="{{url('/admin/users')}}" class="nav-link">
                    <i class="fa fa-address-book-o"></i>
                     <p>Gestionar usuario</p>
                   </a>
-                </li>
+               
 
-                <li class="nav-item">
-                  <a href="{{url('/admin/users')}}" class="nav-link">
+               
+                 <li class="nav-item">
+                  <a href="" class="nav-link">
                     <i class="fa fa-address-book-o"></i>
                     <p>Generar Backup</p>
                   </a>
                 </li>
-              </ul>
-            </li>
-
-
-                  
-      </ul>
+             </ul>
+             </li>
     </nav>
     <!-- /.sidebar-menu -->
 

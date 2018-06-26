@@ -15,19 +15,19 @@ class AdminsTableSeeder extends Seeder
             ['name' =>'Sofia Martinez',
             'email'=>'sofia.martinez@gmail.com',
             'password'=>\Hash::make('user01'),
-            'type' =>'gerente',
+            'type' =>'estrategico',
             'active' =>'1'],
 
             ['name' =>'Rodrigo Moran',
             'email'=>'rodrigo.moran@gmail.com',
             'password'=>\Hash::make('user01'),
-            'type' =>'coordinador',
+            'type' =>'tactico',
             'active' =>'1'],
 
             ['name' =>'Kevin Perez',
             'email'=>'kevin.perez@gmail.com',
             'password'=>\Hash::make('user01'),
-            'type' =>'coordinador',
+            'type' =>'tactico',
             'active' =>'1'],
 
             ['name' =>'Brallan Sanchez',
