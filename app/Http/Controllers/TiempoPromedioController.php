@@ -28,8 +28,10 @@ class TiempoPromedioController extends Controller
                 return $this->$repPDF($fecIni,$fecFin,$proExp);
             }
         }
-        $proExp=DB::table('casefile_process')
-        ->select('id','casefile_id','process_id')->get();
+        $proExp=DB::table('proceso')
+        ->select('idproceso','idexpediente',
+        'estado','fechainicioproceso','fechafinalproceso')
+        ->get();
         return view('admin.tiempoPromedio.index',["proExps",$proExp]);
     }
     public function repPDF($fecIni,$fecFin,$proExp){
@@ -41,8 +43,10 @@ class TiempoPromedioController extends Controller
             ser posterior a la "Fecha Inicial"');
             return Redirect::to('admin/tiempoPromedio');
         } 
-        $proExps=DB::table('casefile_process')
-        ->select('id','casefile_id','process_id')->get();
+        $proExp=DB::table('proceso')
+        ->select('idproceso','idexpediente',
+        'estado','fechainicioproceso','fechafinalproceso')
+        ->get();
         $pdf= PDF::loadView('admin.tiempoPromedio.reporte09'
         ,["proExps"=>$proExps,"fecIni"=>$fechafin,"fecFin"=>$fecFin]);
         $papel_tamaño = array(0,0,216,279);

@@ -13,41 +13,41 @@
                   <h2>MINISTERIO DE SALUD</h2>
                   <h4>Direccion de Salud Ambiental de San Salvador</h4>
                     <div>
-                      <label>Fecha:</label>    <br>
-                      <label>Numero de Reporte:</label>    <br>
-                      <label>Usuario:</label>
+                      <label>Fecha: 10/06/2018</label>    <br>
+                      <label>Numero de Reporte: 1</label>    <br>
+                      <label>Usuario: Gerente</label>
                     </div>
                     <div>
-                        <h5>Tiempo promedio que tarda cada solicitud en las etapas del proceso.</h5> 
+                        <h5>Utilidades obtenidas en la solicitud y otorgamiento de permisos sanitarios.</h5> 
                     </div>
 
           <div class="container col-lg-4 col-md-8 col-sm-8 col-xs-12 " style="text-align: center" >
 
                        <br>
-                      <label>Proceso:</label>
+                      <label>Rubro:</label>
 
                       <div class="form-group">
-                        <select name="proExp" id="proExp" class="form-control" data-live-search="true" required>
-                            <option value="">Seleccionar ...</option>  
-                          @foreach ($proExp $prex)
-                            <option value="{{$prex->idproceso}}"> {{$prex->process_id}}</option>
+                        <select name="rubro" id="rubro" class="form-control" data-live-search="true" required>
+                            <option value="">Seleccionar rubro...</option>  
+                          @foreach ($rubro as $rub)
+                            <option value="{{$rub->id}}"> {{$rub->type}}</option>
                           @endforeach        
                         </select> 
                       </div>
              
                     <br>
                     <label>Desde:</label>
-                   <input type="text" name="fecIni" id="desde" class="form-control" placeholder="00/00/0000" required value="{{old('fecIni')}}">
+                   <input type="text" name="fechainicio" id="desde" class="form-control" placeholder="00/00/0000" required value="{{old('fechainicio')}}">
                     <br>
                     <label>Hasta:</label>
-                    <input type="text" name="fecFin" id="hasta" class="form-control" placeholder="00/00/0000" required value="{{old('fecFin')}}">
+                    <input type="text" name="fechafin" id="hasta" class="form-control" placeholder="00/00/0000" required value="{{old('fechafin')}}">
           
           </div>
 
             <br><br>
             <div class="form-group">
-              <a><button type="submit" id="rep" class="btn btn-success"><i></i> Reporte</button></a>
-              <a><button type="submit" id="rep" class="btn btn-info"><i></i> Ayuda</button></a>
+              <a><button type="submit" id="reporte" class="btn btn-success"><i></i> Reporte</button></a>
+              <a><button type="submit" id="reporte" class="btn btn-info"><i></i> Ayuda</button></a>
             </div>
    
                 
