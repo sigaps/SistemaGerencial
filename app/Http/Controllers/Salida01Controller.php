@@ -45,6 +45,12 @@ class Salida01Controller extends Controller
     public function reportepdf($fechainicio,$fechafin)
     {
     	
+         
+
+          $nuevo1 = date('Y/m/d', strtotime($fechainicio));
+          $nuevo2 = date('Y/m/d', strtotime($fechafin));
+
+
           $date=new Carbon();
           $fecha = $date->format('d/m/Y h:i A');
           $user=Auth::user();
@@ -57,7 +63,7 @@ class Salida01Controller extends Controller
             }  
 
 
-            $detalles=DB::table('expediente as exp')
+             $detalles=DB::table('expediente as exp')
            ->join('establecimiento as est',
             'est.idestablecimiento','=',
             'exp.idexpediente')
@@ -65,7 +71,7 @@ class Salida01Controller extends Controller
             'tip.idtipo','=',
             'est.idestablecimiento')
            ->select('exp.numerosolicitud','est.nomestablecimiento','tip.tipo','exp.estado')
-           ->wherebetween('exp.fechafinexpediente', array($fechainicio,$fechafin))
+           ->wherebetween('exp.fechafinexpediente', array($nuevo1,$nuevo2))
            ->get(); 
 
             

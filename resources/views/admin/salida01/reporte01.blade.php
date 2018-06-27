@@ -71,6 +71,7 @@
 							
 			    		</tr>
 			    	</thead>
+			    	<tbody>
 			    	@foreach ($detalles as $det)
 			    		<tr>
 			    			<td>{{$det->numerosolicitud}}</td>
@@ -79,7 +80,8 @@
 			    			<td>{{$det->estado}}</td>
 			    		</tr>
 			    		@endforeach
-			    	
+			    	</tbody>
+
 	    			</table>
 	    		</div>
 	    		<!-- /.table-responsive -->
