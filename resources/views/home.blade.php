@@ -85,7 +85,8 @@
             <div class="content">
                 <div class="title m-b-md">
                    <h1>Bienvenido al Sistema de Información Gerencial</h1>
-                   <h2>Usuario  {{ Auth::user()->type }} : {{ Auth::user()->name }} </h2>
+                   <h1>SIGAPS</h1>
+                   <h2>Usuario {{ Auth::user()->type }}: {{ Auth::user()->name }} </h2>
                    <div align="center"><img src="logoo.jpg" width="60%"></div>
                 </div>
 

@@ -33,9 +33,9 @@ class AdminsTableSeeder extends Seeder
             ['name' =>'Brallan Sanchez',
             'email'=>'brallan.sanchez@gmail.com',
             'password'=>\Hash::make('user01'),
-            'type' =>'admin',
+            'type' =>'administrador',
             'active' =>'1']
 
-        	));
+            ));
     }
 }

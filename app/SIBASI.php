@@ -8,6 +8,7 @@ class SIBASI extends Model
 {
     //
     protected $table = 'sibasi';
-    protected $primaryKey = 'id';
+    protected $primaryKey = 'idsibasi';
+    protected $fillable = ['idsibasi','zona'];
 
 }

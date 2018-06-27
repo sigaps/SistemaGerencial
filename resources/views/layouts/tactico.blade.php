@@ -35,38 +35,38 @@
            
 
                 <li class="nav-item">
-                <a href="#" class="nav-link">
+                 <a href="{{url('/admin/salida06')}}" class="nav-link">
                   <i class="fa fa-file-text-o"></i>
                   <p>Desempeño de personal</p>
                 </a>
               </li>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{url('/admin/salida07')}}" class="nav-link">
                   <i class="fa fa-file-text-o"></i>
                   <p>Permisos de una empresa</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{url('/admin/salida08')}}" class="nav-link">
                   <i class="fa fa-file-text-o"></i>
                   <p>Lista de permisos</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{url('/admin/salida09')}}" class="nav-link">
                   <i class="fa fa-file-text-o"></i>
                   <p>Permisos por etapas</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{url('/admin/salida10')}}" class="nav-link">
                   <i class="fa fa-file-text-o"></i>
                   <p>Permisos proximos a vencer</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{url('/admin/salida11')}}" class="nav-link">
                   <i class="fa fa-file-text-o"></i>
                   <p>Censo</p>
                 </a>

@@ -25,7 +25,7 @@
 
                        <br>
                       <label>Utilidades por rubro</label>
-
+                      
              
                     <br>
                     <label>Desde:</label>

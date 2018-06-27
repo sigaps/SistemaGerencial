@@ -77,15 +77,15 @@
           <a href="/admin/apoyo"><i class="fa fa-fw fa-home"></i> Inicio</a>
       </li>
       @else
-          @if (Auth::user()->type=="coordinador")
+          @if (Auth::user()->type=="tactico")
               @include('layouts.tactico')
           @endif
 
-          @if (Auth::user()->type=="admin")
+          @if (Auth::user()->type=="administrador")
               @include('layouts.administrador')
           @endif
 
-          @if (Auth::user()->type=="gerente")
+          @if (Auth::user()->type=="estrategico")
                @include('layouts.gerente')
           @endif
       @endif

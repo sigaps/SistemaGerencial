@@ -8,8 +8,7 @@ class Cliente extends Model
 {
     //
     protected $table='desempeno';
-    protected $primaryKey ='id';
-    protected $fillable = ['id','dui','email','name',
-    'nationally','passport','resident_card','telephone'
-     ];
+    protected $primaryKey ='iddesempeno';
+    protected $fillable = ['iddesempeno','idpersonal','tiempoconexion',
+    'cantidadsolicitudes','cantidadproceso','promedio', 'fechadesempeno'];
 }

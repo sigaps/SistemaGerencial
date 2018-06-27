@@ -42,34 +42,34 @@
 
 
                 <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{url('/admin/salida01')}}" class="nav-link">
                   <i class="fa fa-file-text-o"></i>
-                  <p>Permisos aprobados/denegados</p>
+                  <p>1.Permisos aprobados/denegados</p>
                 </a>
               </li>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{url('/admin/salida02')}}" class="nav-link">
                   <i class="fa fa-file-text-o"></i>
-                  <p>Solicitudes SIBASI Y UCSF</p>
+                  <p>2.Solicitudes SIBASI Y UCSF</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{url('/admin/salida03')}}" class="nav-link">
                   <i class="fa fa-file-text-o"></i>
-                  <p>Tiempo medio por etapa </p>
+                  <p>3.Tiempo medio por etapa </p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{url('/admin/salida04')}}" class="nav-link">
                   <i class="fa fa-file-text-o"></i>
-                  <p>Proyección SIBASI-UCSF</p>
+                  <p>4.Proyección SIBASI-UCSF</p>
                 </a>
               </li>
               <li class="nav-item">
                  <a href="{{url('/admin/utilidad')}}" class="nav-link">
                   <i class="fa fa-file-text-o"></i>
-                  <p>Utilidades por rubro</p>
+                  <p>5.Utilidades por rubro</p>
                 </a>
                 </ul>
               </li>
@@ -80,77 +80,53 @@
              <li class="nav-item has-treeview menu-close">
                 <a href="#" class="nav-link active">
                   <i class="fa fa-circle"></i>
-                  <p>Nivel tactico
+                  <p>Nivel Tactico
                    <i class="right fa fa-angle-left"></i></p>
                 </a>
                  <ul class="nav nav-treeview">
            
 
                 <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{url('/admin/salida06')}}" class="nav-link">
                   <i class="fa fa-file-text-o"></i>
-                  <p>Desempeño de personal</p>
+                  <p>6.Desempeño de personal</p>
                 </a>
               </li>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{url('/admin/salida07')}}" class="nav-link">
                   <i class="fa fa-file-text-o"></i>
-                  <p>Permisos de una empresa</p>
+                  <p>7.Permisos de una empresa</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{url('/admin/salida08')}}" class="nav-link">
                   <i class="fa fa-file-text-o"></i>
-                  <p>Lista de permisos</p>
+                  <p>8.Lista de permisos</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{url('/admin/salida09')}}" class="nav-link">
                   <i class="fa fa-file-text-o"></i>
-                  <p>Permisos por etapas</p>
+                  <p>9.Permisos por etapas</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{url('/admin/salida10')}}" class="nav-link">
                   <i class="fa fa-file-text-o"></i>
-                  <p>Permisos proximos a vencer</p>
+                  <p>10.Permisos proximos a vencer</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{url('/admin/salida11')}}" class="nav-link">
                   <i class="fa fa-file-text-o"></i>
-                  <p>Censo</p>
+                  <p>11.Censo</p>
                 </a>
               </li>
               </ul>
             </li>   
        
             
-
-          <li class="nav-item has-treeview menu-close">
-             <a href="#" class="nav-link active">
-              <i class="fa fa-circle"></i>
-              <p>Administrador
-               <i class="right fa fa-angle-left"></i></p>
-              </a>
-                <ul class="nav nav-treeview">
-                  <a href="{{url('/admin/users')}}" class="nav-link">
-                   <i class="fa fa-address-book-o"></i>
-                    <p>Gestionar usuario</p>
-                  </a>
-               
-
-
-                 <li class="nav-item">
-                  <a href="" class="nav-link">
-                    <i class="fa fa-address-book-o"></i>
-                    <p>Generar Backup</p>
-                  </a>
-                </li>
-             </ul>
-             </li>
- 
     </nav>
     <!-- /.sidebar-menu -->
 

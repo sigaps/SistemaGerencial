@@ -32,13 +32,13 @@
                                     	<td>{{ $u->id}}</td>
                                         <td>{{ $u->name }}</td>
                                         <td>{{ $u->email }}</td>
-                                        @if($u->type=='admin')
+                                        @if($u->type=='administrador')
                                         <td>Administrador del Sistema</td>
                                         @endif
-                                        @if($u->type=='gerente')
-                                        <td>Usuario Gerencial</td>
+                                        @if($u->type=='estrategico')
+                                        <td>Usuario Estrategico</td>
                                         @endif
-                                        @if($u->type=='coordinador')
+                                        @if($u->type=='tactico')
                                         <td>Usuario Tactico</td>
                                         @endif
 

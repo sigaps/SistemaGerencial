@@ -31,7 +31,7 @@ class User extends Authenticatable
     {
         return $this->type;
     }
-    public function admin() 
+    public function administrador() 
     {
         return $this->type;
     }
