@@ -31,6 +31,16 @@
     		-->
     		<div  id="contenedor">
     		
+    			
+    			<div class="encabezado" id="encabezado">
+		    	<img src="escudo.jpg" align="right" width="501px" height="480px">
+					<img src="log.jpg" align="left" width="608px" height="164px">
+              		<h2>MINISTERIO DE SALUD</h2>
+			    	<h4>Dirección de Salud Ambiental de San Salvador</h4>
+		    	</div>
+
+
+</br>
     			<div>
     				<h5>Fecha: {{$fecha}}</h5>
     				<h5>N° reporte: 1</h5>
@@ -40,18 +50,13 @@
 
     			<div class="col-lg-3 col-md-6 col-sm-8 col-xs-12">
 					<h5>PARAMETRO DE BUSQUEDA</h5>
-					<h5>Fecha inicial: {{$fechainicio}}</h5>
-					<h5>Fecha Final: {{$fechafin}}</h5>
-					<img src="escudo.jpg" align="right" width="501px" height="480px">
-					<img src="log.jpg" align="left" width="608px" height="164px">
+					<h5>Fecha inicial: {{$fechainicio}}  &nbsp;  &nbsp;  &nbsp;  &nbsp;Fecha final: {{$fechafin}} </h5>
+					
+					
 				</div>
 		 	
 
-		    	<div class="encabezado" id="encabezado">
 		    	
-              		<h2>MINISTERIO DE SALUD</h2>
-			    	<h4>Direccion de Salud Ambiental de San Salvador</h4>
-		    	</div>
 		 	</div>
 
 	    	<div class="panel-heading">

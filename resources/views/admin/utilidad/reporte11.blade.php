@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Estados de Permisos </title>
+    <title>Permisos Sanitarios </title>
     <!-- Bootstrap Core CSS -->
     <link href="{{ public_path()}}/css/reportes.css" rel="stylesheet">
 </head>
@@ -30,19 +30,37 @@
     		</div>
     		-->
     		<div  id="contenedor">
+    		
+    			
+    			<div class="encabezado" id="encabezado">
+		    	<img src="escudo.jpg" align="right" width="501px" height="480px">
+					<img src="log.jpg" align="left" width="608px" height="164px">
+              		<h2>MINISTERIO DE SALUD</h2>
+			    	<h4>Dirección de Salud Ambiental de San Salvador</h4>
+		    	</div>
+
+
+</br>
     			<div>
     				<h5>Fecha: {{$fecha}}</h5>
     				<h5>N° reporte: 1</h5>
     				<h5>Usuario: {{$user->name}}</h5> 
     			</div>
-		    	<div class="encabezado" id="encabezado">	
-              		<h4>Ministerio de Salud</h4>
-			    	<h4>Direccion de Salud Ambiental de San Salvador</h4>
-		    	</div>
+
+
+    			<div class="col-lg-3 col-md-6 col-sm-8 col-xs-12">
+					<h5>PARAMETRO DE BUSQUEDA</h5>
+					<h5>Fecha inicial: {{$fechainicio}}  &nbsp;  &nbsp;  &nbsp;  &nbsp;Fecha final: {{$fechafin}} </h5>
+					
+					
+				</div>
+		 	
+
+		    	
 		 	</div>
 
 	    	<div class="panel-heading">
-	    		<h3>Utilidades obtenidas en la solicitud y otorgamiento de permisos sanitarios.</h3>
+	    		<h3>Utilidades obtenidas por los emision de permisos</h3>
 	    	</div>
 
 	    	<!-- /.panel-heading -->
@@ -51,29 +69,29 @@
 	    			<table class="table" id="tablanommina">
 			    	<thead>			
 			    		<tr>
-							<th>id</th>
+							<th>Numero Solicitud</th>
+							<th>Nombre establecimiento</th>
 							<th>Rubro</th>
-							<th>Total</th>
+							<th>Estado</th>
+							
 			    		</tr>
 			    	</thead>
-			    		@foreach ($detalles as $det)
+			    	<tbody>
+			    	@foreach ($detalles as $det)
 			    		<tr>
-			    			<td>{{ $det->id}}</td>
-			    			<td>{{ $det->type}}</td>
-			    			<td>{{ $det->total}}</td>
-			    		
+			    			<td>{{$det->numerosolicitud}}</td>
+			    			<td>{{$det->nomestablecimiento}}</td>
+			    			<td>{{$det->tipo}}</td>
+			    			<td>{{$det->estado}}</td>
 			    		</tr>
 			    		@endforeach
+			    	</tbody>
+
 	    			</table>
 	    		</div>
 	    		<!-- /.table-responsive -->
 
-				<div class="col-lg-3 col-md-6 col-sm-8 col-xs-12">
-					<h5>PARAMETROS DE FILTRADO: </h5>
-					<h5>Rubro: {{$rubro}}</h5>
-					<h5>Fecha inicial: {{$fechainicio}}</h5>
-					<h5>Fecha Final: {{$fechafin}}</h5>
-				</div> 
+			 
 	   		 </div>
       	</div>
    	</div>              
@@ -82,3 +100,17 @@
 </div>
 </body>
 </html>
+
+<style type="text/css">
+	h2{
+		text-align: center;
+	}
+
+	h5{
+		margin:0.5% 0;
+	}
+
+	img{
+		
+	}
+</style>
